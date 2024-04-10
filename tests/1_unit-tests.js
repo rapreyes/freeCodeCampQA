@@ -65,7 +65,7 @@ suite('Unit Tests', function () {
     test('#isAbove, #isAtMost', function () {
       assert.isAtMost('hello'.length, 5);
       assert.isAbove(1, 0);
-      assert.isAtMost(Math.PI, 3);
+      assert.isAbove(Math.PI, 3);
       assert.isAtMost(1 - Math.random(), 1);
     });
     // #9
@@ -77,8 +77,8 @@ suite('Unit Tests', function () {
     });
     // #10
     test('#approximately', function () {
-      assert.fail(weirdNumbers(0.5), 1, 0);
-      assert.fail(weirdNumbers(0.2), 1, 0);
+      assert.approximately(weirdNumbers(0.5), 1, 0);
+      assert.approximately(weirdNumbers(0.2), 1, 0);
     });
   });
 
