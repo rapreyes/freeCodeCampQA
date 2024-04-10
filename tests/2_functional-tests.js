@@ -39,7 +39,7 @@ suite('Functional Tests', function () {
         .request(server)
         .keepOpen()
         .put('/travellers')
-
+        .send("Colombo")
         .end(function (err, res) {
           assert.equal(res.text, 'Colombo');
 
